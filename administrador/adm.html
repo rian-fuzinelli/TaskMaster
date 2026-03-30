@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../usuario/usuario.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <title>TaskMaster - Admin</title>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <span class="square-check" data-lucide="square-check-big"></span>
+            <h1>TaskMaster</h1>
+        </div>
+        <div class="sidebar-menu">
+            <button class="button-menu marcado" onclick="navigate('dashboard', this)">
+                <span data-lucide="layout-dashboard"></span>
+                <span>Dashboard</span>
+            </button>
+            <button class="button-menu" onclick="navigate('users', this)">
+                <span data-lucide="users"></span>
+                <span>Usuários</span>
+            </button>
+            <button class="button-menu" onclick="navigate('myTasks', this)">
+                <span data-lucide="book-check"></span>
+                <span>Minhas Tarefas</span>
+            </button>
+        </div>
+        <div class="sidebar-footer">
+            <div class="sidebar-admin" id="usuarioLogado">
+            </div>
+            <button class="log-out" onclick="logout()">
+                <span data-lucide="log-out"></span>
+                <span>Log out</span>
+            </button>
+        </div>
+    </aside>
+    <main id="app"></main>
+    <script src="adm.js"></script>
+</body>
+</html>

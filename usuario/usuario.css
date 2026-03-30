@@ -1,0 +1,107 @@
+.secao-inicial {
+    background-color: #5172e1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+}
+
+.texto{
+    color: #fff;
+}
+
+.btn-add{
+    background-color: #9180f2;
+    border: 1px solid #afa8f5;
+}
+
+h3{
+    font-weight: 300;
+}
+
+#cardTarefa{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-tarefa{
+    width: 100%;
+    box-shadow:
+        0 4px 8px 0 #63636333,
+        0 6px 20px 0 #36363630;
+    border-radius: 12px;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.card-tarefa button{
+    padding: 2rem 3rem;
+    flex-wrap: nowrap;
+}
+
+.card-icone{
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.card-icone i{
+    font-size: 3rem;
+    padding: 1.2rem;
+}
+
+.titulo-lista{
+    margin: 1rem 0;
+}
+
+.icone-status i{
+    font-size: 2rem;
+}
+
+.nome-status{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.botao-tarefa{
+    margin-left: auto;
+}
+
+.descricao{
+    margin: 0.7rem 0;
+    width: 80%;
+}
+
+.badge-status{
+    border-radius: 12px;
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.7rem;
+}
+
+.badge-pendente{
+    color: #fba029;
+    background-color: #fff5e6;
+   
+}
+
+.badge-andamento{
+    color: #5172e1;
+    background-color: #e9f2ff;
+}
+
+.badge-completa{
+    color: #367D5E;
+    background-color: #edf5f2;
+}

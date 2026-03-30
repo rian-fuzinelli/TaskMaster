@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="login.css">
+    <title>TaskMaster</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="login">
+            <div class="espaco-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-check-big-icon lucide-square-check-big"><path d="M21 10.656V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12.344"/><path d="m9 11 3 3L22 4"/></svg>
+            </div>
+            <h1 class="titulo">Bem-Vindo!</h1>
+
+            <form action="logar" id="formLogar">
+                <div class="email item-form">
+                    <label for="email">E-mail</label>
+                    <div class="input-wrapper">
+                        <span class="icon" data-lucide="mail"></span>
+                        <input type="email" required name="email" placeholder="nome@exemplo.com">
+                    </div>
+                </div>
+
+                <div class="senha item-form">
+                    <label for="senha">Senha</label>
+                    <div class="input-wrapper">
+                        <span class="icon-left" data-lucide="lock"></span>
+                        <input type="password" required name="senha" id="senha" placeholder="Digite sua senha">
+                        <span class="icon-right" id="toggleSenha" data-lucide="eye" onclick="verSenha()"></span>
+                    </div>
+                </div>
+                <p id="erro"></p>
+                <button type="submit" class="item-form btn-entrar">Entrar</button>
+            </form>
+
+
+            <p class="item-form forget">Esqueci minha senha</p>
+        </div>
+    </div>
+
+</body>
+<script src="login.js"></script>
+</html>

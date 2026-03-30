@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 90%;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+}
+
+.secao-inicial {
+    background-color: #5172e1;
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+}
+
+.texto{
+    color: #fff;
+}
+
+button{
+    padding: 1rem 2rem;
+    border-radius: 12px;
+
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+h3{
+    margin-top: 1rem;
+}
+
+.secao-tarefas{
+    margin-top: 2rem;
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.card{
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 2rem;
+
+    display: flex;
+    gap: 1.5rem;
+}
+
+.card-icone{
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.card-icone i{
+    font-size: 3rem;
+    padding: 1.2rem;
+}
+
+.categoria{
+    font-size: 1rem;
+    color: #505050;
+}
+
+.quantidades{
+    font-size: 3rem;
+}
+
+#total-tarefa{
+    color: #393939;
+    background-color: #e4e4e4;
+}
+
+#pendentes{
+    background-color: #fff5e6;
+    color: #fba029;
+}
+
+#progresso{
+    background-color: #e9f2ff;
+    color: #5172e1;
+}
+
+#completa{
+    background-color: #e6f8f2;
+    color: #12a071;
+}
+
+.titulo-lista{
+    margin: 2rem 0;
+}
+
+.icone-status i{
+    font-size: 2rem;
+}
+
+.nome-status{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.botao-tarefa{
+    margin-left: auto;
+}
+
+.descricao{
+    margin: 0.7rem 0;
+}

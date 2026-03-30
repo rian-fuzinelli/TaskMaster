@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.secao-inicial {
+    background-color: #5172e1;
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 90%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.texto {
+    color: #fff;
+}
+
+button {
+    padding: 1rem 2rem;
+    border-radius: 12px;
+
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+
+}
+
+h3 {
+    margin-top: 1rem;
+}
+
+.secao-tarefa {
+    margin-top: 2rem;
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+
+}
+
+.card{
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 2rem;
+
+    display: flex;
+    gap: 1.5rem;
+}
+
+.card-icone i{
+    font-size: 3rem;
+    padding: 1.2rem;
+    
+    
+}
+
+.card-icone{
+
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+
+}
+
+.categoria{
+    font-size: 1rem;
+    color: #878383;
+
+}
+
+.quantidades{
+    font-size: 3rem;
+}
+
+#total-tarefa{
+    background-color: #e6e4e9;
+    color: #847f7f;
+
+} 
+
+#pendentes{
+    background-color: #fff5e6;
+    color: #fba029;
+}
+
+#progresso{
+    background-color: #e9f2ff;
+    color: #5172e1;
+
+}
+
+#completa{
+    background-color: #e6f8f2;
+    color: #12a071;
+}
+
+
+
+.icone-status i{
+    font-size: 2rem;
+}
+
+.nome-status{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.botao-tarefa{
+    margin-left: auto;
+    background-color: #e9e8e8;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+
+}
+
+.descricao{
+    margin: 0.7rem 0;
+}
+
+.badge-status{
+  
+    border-radius: 12px;
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.7rem;
+    
+}
+
+.icone-andamento i{
+    color: #5172e1;
+    
+}
+
+.nome-pendentes{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+   
+}
+
+
+.icone-pendentes i{
+    font-size: 2rem;
+    color: #fba029;
+    
+}
+
+.badge-pendentes{
+    color: #fba029;
+    background-color: #fff5e6;
+   
+}
+
+.badge-andamento{
+    color: #5172e1;
+    background-color: #e9f2ff;
+}
+
+.botao-iniciar{
+    margin-left: auto;
+    background-color: #e9e8e8;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+
+}
+
+.nome-pendentes{
+    font-size: 20px;
+}
+
+.lista-tarefas{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}

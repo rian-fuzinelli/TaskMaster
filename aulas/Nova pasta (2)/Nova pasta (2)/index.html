@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<htmL>
+
+<HEAD>
+    <TITLE>TO-DO</TITLE>
+    <META charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</HEAD>
+
+<body>
+    <section class="secao-inicial">
+
+        <div class="texto">
+            <h1>Olá, Usúario</h1>
+            <h3>Aqui está um resumo das suas tarefas de hoje!</h3>
+
+        </div>
+
+        <div>
+            <button>Adicionar tarefa</button>
+        </div>
+    </section>
+    <section class="secao-tarefa">
+        <div class="card">
+            <div class="card-icone" id="total-tarefa">
+                <i class="las la-list-alt"></i>
+            </div>
+
+
+            <div class="info-tarefa">
+                <h2 class="categoria">total de tarefas</h2>
+                <h1 class="quantidades">2</h1>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-icone" id="pendentes">
+                <i class="las la-circle"></i>
+            </div>
+
+
+            <div class="info-tarefa">
+                <h2 class="categoria">Pendetes</h2>
+                <h1 class="quantidades">1</h1>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <div class="card-icone" id="progresso">
+                <i class="las la-clock"></i>
+            </div>
+
+
+            <div class="info-tarefa">
+                <h2 class="categoria">Em progresso</h2>
+                <h1 class="quantidades">1</h1>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-icone" id="completa">
+                <i class="las la-check-circle"></i>
+            </div>
+
+            <div class="info-tarefa">
+                <h2 class="categoria">Completa</h2>
+                <h1 class="quantidades">0</h1>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="lista-tarefas">
+        <h1 class="titulo-lista">Sua lista de tarefas</h1>
+
+        <div class="card card-tarefa">
+            <div class="icone-status icone-andamento">
+                <i class="las la-clock"></i>
+
+            </div>
+
+            <div class="tarefa">
+                <div class="nome-status">
+                    <h2 class="nome-tarefa">Ajudar a Isa</h2>
+                    <h4 class="badge-status badge-andamento">Em Progresso</h4>
+                </div>
+
+                <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nihil nisi,
+                    praesentium quae maiores necessitatibus?</p>
+                <h6 class="data-tarefa">Criado em 26/03/2026</h6>
+            </div>
+
+            <button class="botao-tarefa">Iniciar tarefa</button>
+
+        </div>
+
+
+        <div class="card card-tarefa">
+            <div class="icone-status icone-pendentes">
+            
+                <i class="lar la-circle"></i>
+
+            </div>
+
+            <div class="tarefa">
+                <div class="nome-status">
+                    <h2 class="nome-tarefa">Revisar Relatório</h2>
+                    <h4 class="badge-status badge-pendentes">Pendentes</h4>
+
+                </div>
+
+                <p class="descricao">Revisão de relatório mensal</p>
+                <h6 class="data-tarefa">Criado em 26/03/2026</h6>
+
+            </div>
+               
+            <button class="botao-tarefa">Iniciar tarefa</button>
+
+            
+        </div>
+
+    </section>
+
+</body>
+
+</htmL>

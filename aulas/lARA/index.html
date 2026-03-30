@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>To-Do</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    </head>
+
+    <body>
+        <section class="secao-inicial">
+
+            <div class="textos">
+                <h1 class="titulo-secao">Gerenciamento de Usuários</h1>
+                <h3 class="desc-secao">Adicionar, Remover e Gerenciar Usuário</h3>
+            </div>
+
+            <button class="botao-usuario">
+                <i class="las la-plus"></i>Adicionar Usuário
+            </button>
+
+        </section>
+
+        <section class="tabela-usuarios">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Usuário</th>
+                        <th>Nível</th>
+                        <th>Senha</th>
+                        <th>Ingresso</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="nome-email">
+                            <p class="nome">Lara Fernanda</p>
+                            <p class="email">lara@unisagrado.com</p>
+                        </td>
+                        <td>
+                            <p class="nivel">Administrador</p>
+                        </td>
+                        <td>Lara@123</td>
+                        <td>27/03/2026</td>
+                        <td class="actions">
+                            <i class="las la-pencil-alt" id="editar"></i>
+                            <i class="las la-trash-alt" id="deletar"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="nome-email">
+                            <p class="nome">Lara Fernanda</p>
+                            <p class="email">lara@unisagrado.com</p>
+                        </td>
+                        <td>
+                            <p class="nivel">Administrador</p>
+                        </td>
+                        <td>Lara@123</td>
+                        <td>27/03/2026</td>
+                        <td class="actions">
+                            <i class="las la-pencil-alt" id="editar"></i>
+                            <i class="las la-trash-alt" id="deletar"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+{
+    "tasks": [
+        {
+            "id": 1,
+            "title": "Atualizar documentação do sistema",
+            "description": "Atualizar a documentação técnica com as novas funcionalidades",
+            "date": "Mar 23, 2026",
+            "status": "Em Andamento",
+            "userId": 2
+        },
+        {
+            "id": 2,
+            "title": "Configurar ambiente de teste",
+            "description": "Configurar ambiente automatizado",
+            "date": "Mar 23, 2026",
+            "status": "Completa",
+            "userId": 1
+        },
+        {
+            "id": 3,
+            "title": "Entregar primeira parte do projeto",
+            "description": "Desenvolver um sistema simples para controle de tarefas de uma pequena equipe.",
+            "date": "Mar 30, 2026",
+            "status": "Em Andamento",
+            "userId": 1
+        }
+    ],
+
+    "users": [
+        {
+            "id": 1,
+            "nome": "Lara Fernanda",
+            "nivel": "Usuário",
+            "senha": "Lara@123",
+            "ingresso": "Mar 27, 2026",
+            "email": "lara@unisagrado.com"
+        },
+        {
+            "id": 2,
+            "nome": "André Nanni",
+            "nivel": "Usuário",
+            "senha": "Andre@123",
+            "ingresso": "Mar 29, 2026",
+            "email": "andre@unisagrado.com"
+        },
+        {
+            "id": 3,
+            "nome": "Ingrid Heloise",
+            "nivel": "Administrador",
+            "senha": "Indy@123",
+            "ingresso": "Mar 30, 2026",
+            "email": "iindyh@unisagrado.com"
+        }
+    ]
+}

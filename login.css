@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #4f46e5, #9333ea);
+}
+
+.card {
+    background: #ffffffe4;
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+
+    width: 50%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    box-shadow:
+        0 4px 8px 0 #63636333,
+        0 6px 20px 0 #36363630;
+}
+
+.espaco-logo {
+    width: 4.5rem;
+    height: 4.5rem;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.espaco-logo svg {
+    width: 3rem;
+    height: 3rem;
+    color: #fff;
+}
+
+.login {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.titulo {
+    margin-top: 2rem;
+}
+
+form {
+    width: 80%;
+}
+
+.item-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper input {
+    width: 100%;
+    border: 2px solid #8b5cf6;
+    border-radius: 10px;
+    padding: 1rem 2.3rem;
+    font-size: 1rem;
+}
+
+.icon,
+.icon-left {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    color: #6c6b6b;
+    pointer-events: none;
+}
+
+.icon-right {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    color: #666;
+    cursor: pointer;
+}
+
+label {
+    font-weight: bold;
+}
+
+.btn-entrar {
+    width: 100%;
+    background-color: #5772db;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 12px;
+}
+
+.forget {
+    font-size: 1rem;
+    color: #5772db;
+    cursor: pointer;
+}
+
+#erro{
+    display: none;
+    color: #fff;
+    background-color: #f00;
+    padding: 0.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    border-radius: 12px;
+    transition: 0.3s;
+}

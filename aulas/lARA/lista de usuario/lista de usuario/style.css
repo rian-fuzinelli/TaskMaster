@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+ 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 90%;
+    margin: auto;
+}
+
+.secao-inicial{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.desc-secao{
+    color: #737373;
+    margin-top: 0.3rem;
+}
+
+.botao-usuario{
+    padding: 0 1.5rem;
+    font-size: 1rem;
+    border-radius: 12px;
+    border: none;
+    background-color: #5172e1;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.botao-usuario{
+    margin-left: 0.3rem;
+}
+
+.tabela-usuario{
+    margin-top: 2rem;
+}
+
+table{
+    width: 100%;
+    border: solid 2px #e3e3e3;
+    border-collapse: collapse;
+
+}
+
+thead{
+    background-color: #e3e3e3;
+}
+
+tr{
+    border-bottom: 2px solid #e3e3e3;
+}
+
+th{
+    padding: 0.7rem 0;
+    color: #3c3c3c;
+    
+}
+
+td{
+    padding: 0.5rem 0;
+text-align: center;
+
+}
+
+
+
+.nome{
+    font-weight: bold;
+}
+
+.email{
+    font-size: 0.8rem;
+    color: #484848;
+    margin-top: 0.2rem;
+
+}
+
+.nivel{
+    background-color:#6e8ae7;
+    color: #fff;
+    width: 70%;
+    margin: auto;
+    padding: 0.3rem 0;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.actions{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.actions i{
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+#editar{
+    color: #7b92df;
+}
+
+#deletar{
+    color: #f05c5c;
+}
+
+.nivel2 {
+    background-color: #cac3c3;
+    color: #fff;
+    width: 70%;
+    margin: auto;
+    padding: 0.3rem 0;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.Senha{
+    background-color: #cac3c3;
+    color: #5f5a5a;
+    width: 70%;
+    margin: auto;
+    padding: 0.3rem 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#editar2{
+    color: #204fec;
+}
+
+#deletar2{
+    color: #ec0909;
+    text-align: center;
+}
