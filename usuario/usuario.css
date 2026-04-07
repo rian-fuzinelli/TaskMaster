@@ -13,11 +13,14 @@
     color: #fff;
 }
 
-.btn-add{
+.btn-add {
     background-color: #9180f2;
     border: 1px solid #afa8f5;
-}
 
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* 🔥 espaço entre ícone e texto */
+}
 h3{
     font-weight: 300;
 }
@@ -26,6 +29,48 @@ h3{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+/* ========================
+   SIDEBAR TASK LIST
+   ======================== */
+.sidebar-task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+.sidebar-task-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: default;
+    transition: background-color 0.15s;
+}
+
+.sidebar-task-item:hover {
+    background-color: #f3f4f6;
+}
+
+.sidebar-task-title {
+    font-size: 0.82rem;
+    color: #444;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidebar-task-empty {
+    font-size: 0.8rem;
+    color: #999;
+    padding: 6px 10px;
 }
 
 .card-tarefa{
@@ -104,4 +149,266 @@ h3{
 .badge-completa{
     color: #367D5E;
     background-color: #edf5f2;
+}
+
+/* ========================
+   MODAL STYLES
+   ======================== */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-overlay.ativo {
+    display: flex;
+}
+
+.modal-content {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.modal-header h2 {
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.modal-close {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #666;
+    line-height: 1;
+}
+
+.modal-close:hover {
+    color: #333;
+}
+
+.modal-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.modal-field label {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #333;
+}
+
+.modal-field input,
+.modal-field textarea,
+.modal-field select {
+    border: 2px solid #e5e6e8;
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    transition: border-color 0.2s;
+}
+
+.modal-field input:focus,
+.modal-field textarea:focus,
+.modal-field select:focus {
+    outline: none;
+    border-color: #5772db;
+}
+
+.btn-modal-salvar {
+    width: 100%;
+    background-color: #5772db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0.9rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    margin-top: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.btn-modal-salvar:hover {
+    background-color: #4a63c4;
+}
+
+/* ========================
+   ACTION BUTTONS (Edit/Delete)
+   ======================== */
+.tarefa-acoes {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+
+
+.btn-icon-edit,
+.btn-icon-delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    background: none;
+    border: none;
+}
+
+.btn-icon-edit {
+    color: #2251B0;
+    background-color: #e9f2ff;
+}
+
+.btn-icon-edit:hover {
+    background-color: #d4e4ff;
+}
+
+.btn-icon-delete {
+    color: #f00;
+    background-color: #ffe6e6;
+}
+
+.btn-icon-delete:hover {
+    background-color: #ffcccc;
+}
+
+.btn-icon-edit span,
+.btn-icon-delete span {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.btn-acao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.15s;
+    font-size: 1.1rem;
+}
+
+.btn-acao:hover {
+    transform: scale(1.1);
+}
+
+.btn-iniciar {
+    background-color: #9180f2;
+    color: #fff;
+}
+
+.btn-iniciar:hover {
+    background-color: #7c6be0;
+}
+
+.btn-editar {
+    background-color: #ed8936;
+    color: #fff;
+}
+
+.btn-editar:hover {
+    background-color: #dd6b20;
+}
+
+.btn-remover {
+    background-color: #e53e3e;
+    color: #fff;
+}
+
+.btn-remover:hover {
+    background-color: #c53030;
+}
+
+/* ========================
+   MODAL CONFIRMAR EXCLUSÃO
+   ======================== */
+.modal-confirmar {
+    text-align: center;
+    max-width: 400px;
+}
+
+.modal-confirmar h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.modal-confirmar p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.modal-confirmar-icone {
+    font-size: 3rem;
+    color: #e53e3e;
+    margin-bottom: 1rem;
+}
+
+.modal-confirmar-btns {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+.btn-cancelar {
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+    border: 2px solid #e5e6e8;
+    background: #fff;
+    color: #333;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    transition: background-color 0.2s;
+}
+
+.btn-cancelar:hover {
+    background-color: #f3f4f6;
+}
+
+.btn-confirmar-excluir {
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #e53e3e;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    transition: background-color 0.2s;
+}
+
+.btn-confirmar-excluir:hover {
+    background-color: #c53030;
 }

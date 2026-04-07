@@ -39,7 +39,43 @@
             </form>
 
 
-            <p class="item-form forget">Esqueci minha senha</p>
+            <p class="item-form forget" onclick="abrirModalEsqueciSenha()">Esqueci minha senha</p>
+        </div>
+    </div>
+
+    <!-- Modal Esqueci Senha -->
+    <div class="modal-overlay" id="modalEsqueciSenha">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Recuperar Senha</h2>
+                <span class="modal-close" onclick="fecharModalEsqueciSenha()">&times;</span>
+            </div>
+            <form id="formEsqueciSenha">
+                <div class="item-form">
+                    <label for="emailRecuperar">E-mail</label>
+                    <div class="input-wrapper">
+                        <span class="icon" data-lucide="mail"></span>
+                        <input type="email" required name="emailRecuperar" id="emailRecuperar" placeholder="nome@exemplo.com">
+                    </div>
+                </div>
+                <div class="item-form">
+                    <label for="novaSenha">Nova Senha</label>
+                    <div class="input-wrapper">
+                        <span class="icon-left" data-lucide="lock"></span>
+                        <input type="password" required name="novaSenha" id="novaSenha" placeholder="Digite a nova senha">
+                    </div>
+                </div>
+                <div class="item-form">
+                    <label for="confirmarSenha">Confirmar Senha</label>
+                    <div class="input-wrapper">
+                        <span class="icon-left" data-lucide="lock"></span>
+                        <input type="password" required name="confirmarSenha" id="confirmarSenha" placeholder="Confirme a nova senha">
+                    </div>
+                </div>
+                <p id="erroRecuperar"></p>
+                <p id="sucessoRecuperar"></p>
+                <button type="submit" class="item-form btn-entrar">Alterar Senha</button>
+            </form>
         </div>
     </div>
 
