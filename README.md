@@ -148,7 +148,7 @@ Lembrando que para o site funcionar, o `json-server db.json` deverá estar rodan
 * Melhorar UX/UI
 * Adicionar filtros e busca de tarefas
 
-----
+---
 
 ## 💻 Responsáveis pelo Projeto:
 
