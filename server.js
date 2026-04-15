@@ -139,48 +139,49 @@ app.get('/tasks', (req, res) => {
 });
 
 // GET /tasks/:id
-app.get('/tasks/:id', (req, res) => {
-    const task = db.tasks.find(t => t.id === Number(req.params.id));
-    if (!task) return res.status(404).json({ error: 'Tarefa não encontrada' });
-    res.json(task);
-});
+const Task = require('./tarefa/Task');
+    app.get('/tasks/:id', (req, res) => {
+        const task = db.tasks.find(t => t.id === Number(req.params.id));
+        
+        if (!task) return res.status(404).json({ error: 'Tarefa não encontrada' });
+        res.json(task);
+    });
 
-// POST /tasks
-app.post('/tasks', (req, res) => {
-    const { title, description, status, userId } = req.body;
-    if (!title) {
-        return res.status(400).json({ error: 'Título é obrigatório' });
-    }
-    const newTask = {
-        id: nextId(db.tasks),
-        title,
-        description: description || '',
-        date: new Date().toLocaleDateString('en-US', { month: 'short', day: '2-digit', year: 'numeric' }),
-        status: status || 'Pendente',
-        userId: userId || null
-    };
-    db.tasks.push(newTask);
-    saveDb();
-    res.status(201).json(newTask);
-});
+    // POST /tasks
+    app.post('/tasks', (req, res) => {
+        const { title, description, status, userId } = req.body;
+        
+        if (!title) {
+            return res.status(400).json({ error: 'Título é obrigatório' });
+        }
 
-// PUT /tasks/:id
-app.put('/tasks/:id', (req, res) => {
-    const idx = db.tasks.findIndex(t => t.id === Number(req.params.id));
-    if (idx === -1) return res.status(404).json({ error: 'Tarefa não encontrada' });
-    db.tasks[idx] = { ...db.tasks[idx], ...req.body, id: db.tasks[idx].id };
-    saveDb();
-    res.json(db.tasks[idx]);
-});
+        const newTask = new Task({ title, description, status, userId});
 
-// DELETE /tasks/:id
-app.delete('/tasks/:id', (req, res) => {
-    const idx = db.tasks.findIndex(t => t.id === Number(req.params.id));
-    if (idx === -1) return res.status(404).json({ error: 'Tarefa não encontrada' });
-    const deleted = db.tasks.splice(idx, 1);
-    saveDb();
-    res.json(deleted[0]);
-});
+        newTask.id = nextId(db.tasks);
+
+        db.tasks.push(newTask);
+        saveDb();
+
+        res.status(201).json(newTask);
+    });
+
+    // PUT /tasks/:id
+    app.put('/tasks/:id', (req, res) => {
+        const idx = db.tasks.findIndex(t => t.id === Number(req.params.id));
+        if (idx === -1) return res.status(404).json({ error: 'Tarefa não encontrada' });
+        db.tasks[idx] = { ...db.tasks[idx], ...req.body, id: db.tasks[idx].id };
+        saveDb();
+        res.json(db.tasks[idx]);
+    });
+
+    // DELETE /tasks/:id
+    app.delete('/tasks/:id', (req, res) => {
+        const idx = db.tasks.findIndex(t => t.id === Number(req.params.id));
+        if (idx === -1) return res.status(404).json({ error: 'Tarefa não encontrada' });
+        const deleted = db.tasks.splice(idx, 1);
+        saveDb();
+        res.json(deleted[0]);
+    });
 
 // ========================
 // INICIAR SERVIDOR

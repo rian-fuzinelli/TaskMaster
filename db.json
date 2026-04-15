@@ -2,27 +2,19 @@
     "tasks": [
         {
             "id": 1,
-            "title": "Teste",
-            "description": "Atualizar a documentação técnica com as novas funcionalidades",
-            "date": "Mar 23, 2026",
+            "title": "aa",
+            "description": "a",
             "status": "Em Andamento",
+            "date": "15/04/2026",
             "userId": 2
         },
         {
             "id": 2,
-            "title": "Configurar ambiente de teste",
-            "description": "Configurar ambiente automatizado",
-            "date": "Mar 23, 2026",
-            "status": "Completa",
-            "userId": 1
-        },
-        {
-            "id": 3,
-            "title": "Entregar primeira parte do projeto",
-            "description": "Desenvolver um sistema simples para controle de tarefas de uma pequena equipe.",
-            "date": "Mar 30, 2026",
-            "status": "Em Andamento",
-            "userId": 1
+            "title": "aa",
+            "description": "a",
+            "status": "Pendente",
+            "date": "15/04/2026",
+            "userId": 3
         }
     ],
     "users": [
