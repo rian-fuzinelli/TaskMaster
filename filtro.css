@@ -1,0 +1,38 @@
+body { font-family: Arial, sans-serif; background:#f5f6fa; margin:0; padding:20px; }
+h1 { margin-bottom:20px; }
+
+.card {
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  margin-bottom:15px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.filters {
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+input, select, button {
+  padding:8px;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+
+button {
+  cursor:pointer;
+  background:#4CAF50;
+  color:white;
+  border:none;
+}
+
+.task {
+  display:flex;
+  justify-content:space-between;
+}
+
+.status {
+  font-weight:bold;
+}

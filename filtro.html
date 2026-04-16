@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Filtros de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Filtros de Tarefas</h1>
+
+<div class="card filters">
+  <input type="text" id="search" placeholder="Buscar tarefa...">
+
+  <select id="status">
+    <option value="All">Todos Status</option>
+    <option value="Pending">Pendente</option>
+    <option value="In Progress">Em andamento</option>
+    <option value="Completed">Concluído</option>
+  </select>
+
+  <select id="user">
+    <option value="All">Todos Usuários</option>
+    <option value="Maria Silva">Maria Silva</option>
+    <option value="Usuário Padrão">Usuário Padrão</option>
+  </select>
+
+  <button id="resetBtn">Limpar</button>
+</div>
+
+<div id="taskList"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
