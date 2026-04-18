@@ -1,20 +1,28 @@
 {
     "tasks": [
         {
-            "id": 1,
-            "title": "aa",
-            "description": "a",
-            "status": "Em Andamento",
-            "date": "15/04/2026",
-            "userId": 2
-        },
-        {
             "id": 2,
             "title": "aa",
             "description": "a",
-            "status": "Pendente",
+            "status": "Completa",
             "date": "15/04/2026",
             "userId": 3
+        },
+        {
+            "id": 3,
+            "title": "teste",
+            "description": ".",
+            "status": "Completa",
+            "date": "15/04/2026",
+            "userId": 3
+        },
+        {
+            "id": 4,
+            "title": "gg",
+            "description": "gedg",
+            "status": "Pendente",
+            "date": "16/04/2026",
+            "userId": 1
         }
     ],
     "users": [
@@ -41,6 +49,22 @@
             "senha": "Indy@123",
             "ingresso": "Mar 30, 2026",
             "email": "iindyh@unisagrado.com"
+        },
+        {
+            "id": 4,
+            "nome": "Kelvin Kleyn",
+            "nivel": "Administrador",
+            "senha": "kkkk",
+            "email": "Kelvin@unisagrado.com",
+            "ingresso": "Apr 18, 2026"
+        },
+        {
+            "id": 5,
+            "nome": "Kelvin Kleyn",
+            "nivel": "Usuário",
+            "senha": "Teste",
+            "email": "Kelvin@unisagrado.com",
+            "ingresso": "Apr 18, 2026"
         }
     ]
 }

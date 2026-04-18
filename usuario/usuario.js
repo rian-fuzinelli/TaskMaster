@@ -1,4 +1,5 @@
-const user = JSON.parse(localStorage.getItem('user'));
+const userData = JSON.parse(localStorage.getItem('user'));
+const user = new Usuario(userData);
 const LINK_JSON = "http://localhost:3000";
 
 if (!user) {
