@@ -1,3 +1,4 @@
+const Usuario = require('./usuarioclass');
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
@@ -93,14 +94,21 @@ app.post('/users', (req, res) => {
     if (!nome || !email || !senha) {
         return res.status(400).json({ error: 'Nome, email e senha são obrigatórios' });
     }
-    const newUser = {
-        id: nextId(db.users),
-        nome,
-        nivel: nivel || 'Usuário',
-        senha,
-        ingresso: new Date().toLocaleDateString('en-US', { month: 'short', day: '2-digit', year: 'numeric' }),
-        email
-    };
+    const newUser = new Usuario({
+    id: nextId(db.users),
+    nome,
+    nivel
+});
+
+newUser.senha = senha;
+newUser.email = email;
+newUser.ingresso = new Date().toLocaleDateString('en-US', { 
+    month: 'short', 
+    day: '2-digit', 
+    year: 'numeric' 
+});
+
+
     db.users.push(newUser);
     saveDb();
     res.status(201).json(newUser);
