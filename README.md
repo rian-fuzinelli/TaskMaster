@@ -125,6 +125,7 @@ Lembrando que para o site funcionar, o `json-server db.json` deverá estar rodan
 📦 projeto
  ┣ 📂 administrador
  ┣ 📂 usuario
+ ┣ 📂 tarefa
  ┣ 📄 index.html
  ┣ 📄 style.css
  ┣ 📄 login.css
@@ -137,7 +138,7 @@ Lembrando que para o site funcionar, o `json-server db.json` deverá estar rodan
 
 ## 💡 Observações
 
-* Este projeto utiliza uma API fake (`json-server`) (POR ENQUANTO), portanto não é recomendado para produção sem backend real.
+* Este projeto utiliza uma API fake (`json-server`) (Olá Rafael!), portanto não é recomendado para produção sem backend real.
 * Feito para fins de estudo e prototipação.
 
 ---
